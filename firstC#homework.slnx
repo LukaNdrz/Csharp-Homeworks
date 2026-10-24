@@ -1,3 +1,7 @@
 <Solution>
-  <Project Path="firstC#homework/firstC#homework.csproj" />
+  <Project Path="lesson1HW/lesson1HW.csproj" />
+  <Project Path="lesson2HW/lesson2HW.csproj" />
+  <Project Path="lesson3HW/C#3rdHw/lesson3HW.csproj" />
+  <Project Path="lesson4HW/lesson4HW.csproj" Id="42206786-c149-4ab9-bb91-59872510d59a" />
+  <Project Path="lesson5HW/lesson5HW.csproj" />
 </Solution>
