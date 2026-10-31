@@ -6,4 +6,5 @@
   <Project Path="lesson5HW/lesson5HW.csproj" />
   <Project Path="lesson6HW/lesson6HW.csproj" Id="0c553718-711c-41e9-af11-036ad819e70f" />
   <Project Path="lesson7HW/lesson7HW.csproj" Id="1b1cd606-1336-4173-b241-93ed2a3eed7d" />
+  <Project Path="lesson8HW/lesson8HW.csproj" Id="679f4b95-8baf-4bd9-b8de-84be2ffa80b2" />
 </Solution>
