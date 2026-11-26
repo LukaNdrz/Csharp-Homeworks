@@ -2,68 +2,29 @@ namespace lesson14HW
 {
   internal class Program
   {
-      public static List<T> Where<T>(List<T> collection, Predicate<T> condition)
+
+
+    static void Main(string[] args)
     {
-      List<T> result = new List<T>();
+      List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6 };
 
-      foreach (T item in collection)
-      {
-        if (condition(item))
-          result.Add(item);
-      }
+      var evenNumbers = MyCollection.Where(numbers, x => x % 2 == 0);
 
-      return result;
-    }
+      var firstEven = MyCollection.FirstOrDefault(numbers, x => x % 2 == 0);
 
-    ///////////// FirstOrDefault
-    public static T FirstOrDefault<T>(List<T> collection, Predicate<T> condition)
-    {
-      foreach (T item in collection)
-      {
-        if (condition(item))
-          return item;
-      }
+      bool hasEven = MyCollection.Any(numbers, x => x % 2 == 0);
 
-      return default(T);
-    }
+      bool allPositive = MyCollection.All(numbers, x => x > 0);
 
-    ////////////////////// Any
-    public static bool Any<T>(List<T> collection, Predicate<T> condition)
-    {
-      foreach (T item in collection)
-      {
-        if (condition(item))
-          return true;
-      }
+      int evenCount = MyCollection.Count(numbers, x => x % 2 == 0);
 
-      return false;
-    }
-
-    /////////////////// All
-    public static bool All<T>(List<T> collection, Predicate<T> condition)
-    {
-      foreach (T item in collection)
-      {
-        if (!condition(item))
-          return false;
-      }
-
-      return true;
-    }
-
-    ///////////////////////////// Count
-    public static int Count<T>(List<T> collection, Predicate<T> condition)
-    {
-      int count = 0;
-
-      foreach (T item in collection)
-      {
-        if (condition(item))
-          count++;
-      }
-
-      return count;
+      Console.WriteLine(string.Join(", ", evenNumbers));
+      Console.WriteLine(firstEven);
+      Console.WriteLine(hasEven);
+      Console.WriteLine(allPositive);
+      Console.WriteLine(evenCount);
     }
   }
-  }
+}
+  
 
